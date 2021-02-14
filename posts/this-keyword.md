@@ -12,6 +12,7 @@ The JavaScript this keyword refers to the object it belongs to.
       lastName : "Doe",
       id       : 5566,
       fullName : function() {
-        return this.firstName + " " + this.lastName;
+        return {this.firstName + 
+        " " + this.lastName;}
       }
 };
