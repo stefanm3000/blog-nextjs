@@ -33,11 +33,15 @@ export default function Layout({
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
+            <Link href={"https://github.com/stefanm3000"}>
+              <a>
+                <img
+                  src="/images/profile.jpg"
+                  className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+                  alt={name}
+                />
+              </a>
+            </Link>
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (

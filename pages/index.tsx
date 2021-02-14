@@ -32,12 +32,11 @@ export default function Home({
       <section className={utilStyles.headingMd}>
         <p>Hi, gib job pls</p>
         <p>
-          This is a sample website - imma be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">the Next.js tutorial</a>.
+          This is a "blog" website to help me learn{" "}
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Topics:</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
