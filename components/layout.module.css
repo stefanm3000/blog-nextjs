@@ -2,9 +2,10 @@
   max-width: 36rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
-  border: 2px solid white;
+  border: 2px solid rgb(56, 56, 56);
   border-radius: 10px;
-  background: rgb(20, 20, 20);
+  background: black;
+  
 }
 
 .header {
@@ -16,6 +17,7 @@
 .headerImage {
   width: 6rem;
   height: 6rem;
+  margin-top: 2rem;
 }
 
 .headerHomeImage {
@@ -23,8 +25,14 @@
   width: 8rem;
   height: 8rem;
   border: 3px solid #69aefc;
+  animation: blink 1.5s;
+    animation-iteration-count: 3;
 }
 
+@keyframes blink { 50% { border-color:#fff ; }   
+}
+
+
 .backToHome {
-  margin: 3rem 0 0;
+  margin: 3rem 0;
 }
